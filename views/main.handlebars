@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tech Blog</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="public/style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <h1>
-                <a href="/">home</a>
+                <a href="#">home</a>
             </h1>
             <nav>
                 {{#if loggedIn}}
@@ -25,7 +25,7 @@
         </header>
         <div class="site-row">
             <div class="site-name">
-                <h1>The Tech Blog</h1>
+                <h1>Tech Blog</h1>
             </div>
         </div>
         <main>
@@ -34,7 +34,7 @@
     </div>
 
     {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
+    <script src="public/script.js"></script>
     {{/if}}
 </body>
 
