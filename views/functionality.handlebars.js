@@ -1,4 +1,4 @@
-function show_data() {
+function fill_template() {
     var data = {
         title: "why handlebars is vool",
         list: [
@@ -7,7 +7,7 @@ function show_data() {
         ],
         footer: "this is the footer"
     };
-    var template = Handlebars.compile(document.querySelector("#template"))
-    var filled = template(data)
+    var template = Handlebars.compile(document.querySelector("#template").innerHTML);
+    var filled = template(data);
     document.querySelector("#output").innerHTML = filled;
-};
+}
